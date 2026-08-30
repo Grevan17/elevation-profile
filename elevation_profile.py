@@ -7,9 +7,9 @@
 #  PLUGIN NAME : Elevation Profile
 #  DESCRIPTION : High-Precision Terrain Profiling Tool for QGIS
 #  AUTHOR      : Gilbert Rival D
-#  EMAIL       : jujun.junaedi@outlook.com
+#  EMAIL       : Gilbert.revan17@gmail.com
 #  VERSION     : 1.9.3
-#  COPYRIGHT   : (c) 2023-2026 by Jujun Junaedi
+#  COPYRIGHT   : (c) 2023 by Gilbert Rival D
 #  LICENSE     : GPL-2.0-or-later
 # --------------------------------------------------------------------------
 
