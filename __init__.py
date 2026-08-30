@@ -1,28 +1,23 @@
 # -*- coding: utf-8 -*-
-
-# ------------------------------------------------------------------------
-#  ELEVATION PROFILE TOOLS
-# --------------------------------------------------------------------------
-#  PLUGIN NAME : Elevation Profile
-#  DESCRIPTION : High-Precision Terrain Profiling Tool for QGIS
-#  AUTHOR      : Gilbert Rival D
-#  EMAIL       : Gilbert.revan17@gmail.com
-#  VERSION     : 1.9.3
-#  COPYRIGHT   : (c) 2023 by Gilbert Rival D
-#  LICENSE     : GPL-2.0-or-later
-#  MOTTO       : "Ingat kita pernah tidak bisa"
-# --------------------------------------------------------------------------
-
 """
-This script initializes the plugin, making it known to QGIS.
+/***************************************************************************
+ Embed Legend Pro
+                                 A QGIS plugin
+ Interactive Floating Legend & Advanced Thematic Export Tool
+                             -------------------
+        begin                : 2025
+        copyright            : (C) 2025 by Jujun Junaedi
+        email                : jujun.junaedi@outlook.com
+ ***************************************************************************/
 """
 
 def classFactory(iface):
-    """
-    Load ElevationProfile class from file elevation_profile.
+    """Load EmbedLegendPlugin class from file embed_legend.
     
     :param iface: A QGIS interface instance.
     :type iface: QgsInterface
     """
-    from .elevation_profile import ElevationProfile
-    return ElevationProfile(iface)
+    
+    # Import class utama dari file embed_legend.py
+    from .embed_legend import EmbedLegendPlugin
+    return EmbedLegendPlugin(iface)

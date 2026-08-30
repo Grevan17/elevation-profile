@@ -1,60 +1,75 @@
-# Elevation Profile ⛰️📈 (Standard Version)
+# 🗺️ Embed Legend Pro for QGIS
 
-![QGIS Version](https://img.shields.io/badge/QGIS-3.16%20%7C%204.x-589632?logo=qgis)
-![Version](https://img.shields.io/badge/version-1.9.3-blue)
-![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green)
+[![QGIS Plugin](https://img.shields.io/badge/QGIS-Plugin-589632.svg)](https://plugins.qgis.org/plugins/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Donate](https://img.shields.io/badge/Donate-Buy_Me_a_Coffee-FF813F.svg)](#support--donate)
 
-*"Sebaik-baiknya Manusia adalah yang bermanfaat bagi sesama"*
+**Stop wasting time manually cropping legends and fixing messy Google Earth exports!**
 
-## 📖 Overview
-**Elevation Profile** is a high-precision 2D terrain profiling tool built for QGIS. Designed specifically to bridge the gap between Geographic Information Systems (GIS) and Telecommunication Network Planning & Optimization (NPO) workflows. 
 
-This **Standard Version** allows engineers and GIS professionals to instantly visualize terrain cross-sections directly against actual local DEM raster data, without the need to load heavy RF planning software. Now fully refactored for maximum stability, featuring a pure single-row layout optimized for both **QGIS 3.x** and the upcoming **QGIS 4.x**.
+**Embed Legend Pro** is the ultimate productivity booster designed specifically for RF Engineers, GIS Analysts, and Drive Test Coordinators. It creates a live, floating legend panel right on your QGIS map canvas and offers advanced thematic export capabilities (KMZ & MIF) that native tools lack.
 
-## ✨ Standard Features
-* **Offline DEM Support:** Seamlessly generate elevation profiles from local Raster files (e.g., DEMNAS, SRTM, AW3D30).
-* **Interactive Line Drawing:** Draw a path on the map with **real-time live tooltips** displaying Azimuth and Distance. Instantly view the elevation cross-section.
-* **Dynamic Terrain Smoothing (Sigma):** Adjust DEM smoothing on the fly to filter noise and spikes from raw terrain sources.
-* **Interactive Tracking:** Hover over the generated profile chart to instantly see the exact distance and elevation mapped back to the map canvas via an interactive crosshair marker.
-* **QGIS 4.x Ready:** Fully compatible with PyQt6 while seamlessly maintaining backward compatibility with older QGIS 3.x (PyQt5) versions.
-* **High-Res Export:** Save your analysis as PNG images or scalable SVG vectors for sharp, professional technical reporting.
+Built by an RF Engineer, for RF Engineers. 📶
 
 ---
 
-## 🔒 PRO Features (Upgrade Required)
-Take your RF Site Audit and Network Planning to the next level! Upgrading to the **Pro Version** unlocks:
-* **📡 Advanced LoS Viewer:** Perform Microwave and Radio Link planning with interactive Tx/Rx tower heights, Earth bulge calculations, dynamic K-Factor presets, and 60% Fresnel Zone clearance visualization complete with smart critical obstacle detection.
-* **👥 Population Metrics:** Load demographic raster data to overlay a 1D population density profile directly onto the elevation chart and automatically estimate the total population within a corridor.
-* **🌗 Dual Theme UI:** Instantly toggle between Dark Mode and an elegant Ivory Light Mode.
-* **🎁 SPECIAL BONUS:** Get the **Embed Legend Pro** plugin for FREE with your upgrade!
+## 🚀 Key Features
 
-**Get the Pro Version here / Dapatkan Versi Pro disini:**
-* 🌐 **Global:** [Download via Gumroad](https://jujunet.gumroad.com/l/dssdip)
-* 🇮🇩 **Indonesia:** [Download via Lynk.id](https://lynk.id/kangjun/55xnn81vz9rg)
+* **Interactive Floating Panel:** A draggable legend that stays on top of your map canvas. Move it anywhere!
+* **Smart Visibility Toggle:** Click any item in the legend to instantly hide/show features on the map with a "strikethrough" visual effect.
+* **Multi-Layer Stacking:** Select multiple layers, and the legend automatically stacks them with clear folder-like separators.
+* **Real-Time Statistics:** Automatically calculates feature counts and percentages (%) for every thematic category.
+* **Professional KMZ Export (Google Earth):**
+  * **Auto-Embedded Legend:** Exports the KMZ with the legend image overlay fixed perfectly on the screen.
+  * **Clean Geometry:** Points (Drive Test) and Lines (Routes) are exported *clean* without annoying text labels cluttering the view.
+  * **Smart Labeling:** Automatically detects `SiteID`, `eNB`, or `CellName` columns to generate professional "Yellow Floating Labels" *only* for Sector/Polygon layers.
+* **Blazing Fast:** Export thousands of Gcell/Site data points to Google Earth in less than a minute.
+* **MapInfo Export:** Direct export to `.MIF/.MID` format with hardcoded thematics.
+* **Customizable UI:** Choose between "Modern Box" or "Clean Minimalist" styles. Adjust fonts and colors to match your reporting needs.
 
 ---
-
-## 🚀 How to Use (Standard Version)
-1. **Load Data:** Ensure your local DEM/Raster layer is loaded in QGIS and selected in the dropdown menu. (Click the **↻** button to refresh the list).
-2. **Draw Line (📈):** Click the "📈 Line" button, then click on the map to trace your path (Left-click to add points). Watch the live tooltips for Distance and Azimuth. **Right-click** to finish and generate the profile.
-3. **Adjust Smoothing:** Change the "Smooth" value to filter out terrain noise (0 = Raw, 3 = DEMNAS, 5 = AW3D30, 20 = Smooth/SRTM).
-4. **Export:** Click the "💾 Export" button to save your profile as a PNG or SVG file.
 
 ## 📸 Screenshots
-<img width="688" height="398" alt="Elevation Profile Standar" src="https://github.com/user-attachments/assets/78f8c601-b332-4717-9386-fd13c0a859fb" />
 
+<img width="548" height="474" alt="screenshot_qgis" src="https://github.com/user-attachments/assets/907f2885-9d55-426b-ace8-0cd142b8e6c0" />
+<img width="742" height="504" alt="screenshot_ge" src="https://github.com/user-attachments/assets/59eec4f3-68a7-4796-9d11-1e832c7daeb2" />
 
-## 📥 Recommended Data Sources
-* **Global Data:** [JAXA ALOS World 3D (30m)](https://earth.jaxa.jp/en/)
-* **Indonesia Local Data:** [DEMNAS - Badan Informasi Geospasial (8m)](https://tanahair.indonesia.go.id/demnas/)
+---
+
+## 🛠️ Installation
+
+**Method 1: Via QGIS Official Repository (Recommended)**
+1. Open QGIS.
+2. Go to `Plugins` > `Manage and Install Plugins...`
+3. Search for **Embed Legend Pro**.
+4. Click `Install Plugin`.
+
+**Method 2: Manual Installation (ZIP)**
+1. Download the latest `.zip` release from this repository.
+2. Open QGIS, go to `Plugins` > `Manage and Install Plugins...` > `Install from ZIP`.
+3. Select the downloaded ZIP file and install.
+
+---
+
+## 💡 How to Use
+1. Select one or multiple Vector Layers in your QGIS Layers Panel.
+2. Click the **Embed Legend** icon in the toolbar.
+3. The floating legend will appear. Right-click the panel to customize the style, colors, and toggle count/percentages.
+4. Right-click the panel and select **Export KMZ** or **Export MIF** to generate your professional reports.
+
+---
 
 ## ☕ Support & Donate
-If this free standard tool saves you hours of work or helps your daily optimization tasks, consider supporting its continuous development!
+
+This tool is provided 100% free and open-source. If this plugin saves you hours of manual work, helps you hit your optimization targets, or just makes your RF reporting life easier, consider buying me a coffee! Your support keeps this project alive and continuously improving.
+
+* 🌍 **International:** [Buy Me a Coffee](https://www.buymeacoffee.com/juneth) or [PayPal](https://paypal.me/junethtea)
+* 🇮🇩 **Indonesia (Local):** OVO / GoPay at `081510027058`
+
+*“May this tool be useful and become a continuous charity (amal jariah), especially for my beloved late parents. 🤲”*
 
 ---
-> *"Sebaik-baiknya Manusia adalah yang bermanfaat bagi sesama"*
 
----
-<div align="center">
-  <sub>by <b>Gilbert Rival D</b> | © 2024 - 2026</sub>
-</div>
+## 👨‍💻 Author
+**Jujun Junaedi** Telecommunications & NPO Engineer | Python & GIS Enthusiast  
+Email: jujun.junaedi@outlook.com or jujun.telco@gmail.com
