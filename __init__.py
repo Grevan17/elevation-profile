@@ -6,8 +6,8 @@
  Interactive Floating Legend & Advanced Thematic Export Tool
                              -------------------
         begin                : 2025
-        copyright            : (C) 2025 by Jujun Junaedi
-        email                : jujun.junaedi@outlook.com
+        copyright            : (C) 2025 by Gilbert Rival D
+        email                : gilbert.revan17@gmail.com
  ***************************************************************************/
 """
 
