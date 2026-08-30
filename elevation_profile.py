@@ -163,7 +163,7 @@ class ElevationDockWidget(QDockWidget):
         super().closeEvent(event)
 
     def __init__(self, parent=None):
-        super().__init__("Elevation Profile v1.9.3 | ©Jujun.J", parent)    
+        super().__init__("Elevation Profile v1.9.3 | ©GilberRD", parent)    
         self.setAllowedAreas(QT_BOTTOM_DOCK | QT_TOP_DOCK)
         
         self.main_widget = QWidget()
@@ -445,8 +445,8 @@ class ElevationDockWidget(QDockWidget):
             "<p style='color: #7f8c8d; margin-top: 0px; margin-bottom: 15px;'>High-Precision 2D Terrain Profiling Tool.</p>"
             "<table style='margin-bottom: 15px;' cellpadding='3'>"
             "<tr><td width='70'><b>Version:</b></td><td>1.9.3 (Standard)</td></tr>"
-            "<tr><td><b>Author:</b></td><td>Jujun Junaedi</td></tr>"
-            "<tr><td><b>Contact:</b></td><td><a href='mailto:jujun.junaedi@outlook.com' style='color: #2980b9; text-decoration: none;'>jujun.junaedi@outlook.com</a></td></tr>"
+            "<tr><td><b>Author:</b></td><td>Gilbert Rival D</td></tr>"
+            "<tr><td><b>Contact:</b></td><td><a href='mailto:gilbert.revan17@gmail.com' style='color: #2980b9; text-decoration: none;'>gilbert.revan17@gmail.com</a></td></tr>"
             "</table>"
             "<hr style='border: 0; border-top: 1px solid #bdc3c7; margin-bottom: 15px;'>"
             "<div style='margin-bottom: 15px; margin-top: 15px;'>"
